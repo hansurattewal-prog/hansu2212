@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insta Bio Ideas | @hansu_ratewal82</title>
+  <meta name="description"
+    content="Discover the most creative and attractive Instagram bio ideas. Curated by @hansu_ratewal82." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Animated Background Blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Floating Particles -->
+  <div class="particles" id="particles" aria-hidden="true"></div>
+
+  <!-- ───── NAVBAR ───── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">📸</span>
+        <span class="logo-text">InstaVibe<span class="logo-accent">Bio</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#categories" class="nav-link">Categories</a></li>
+        <li><a href="#generator" class="nav-link">Generator</a></li>
+        <li><a href="#trending" class="nav-link">Trending</a></li>
+        <li><a href="#tips" class="nav-link">Tips</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <a href="https://www.instagram.com/hansu_ratewal82" target="_blank" rel="noopener" class="btn-insta"
+          id="navInstaBtnTop">
+          <span>@hansu_ratewal82</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ───── HERO ───── -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">✨ #1 Bio Ideas Platform</div>
+      <h1 class="hero-title">
+        Craft Your Perfect
+        <span class="gradient-text">Instagram Bio</span>
+      </h1>
+      <p class="hero-subtitle">
+        Explore hundreds of creative, aesthetic & personality-packed bio ideas.
+        Stand out and let the world know who you truly are. 🚀
+      </p>
+      <div class="hero-cta">
+        <a href="#generator" class="btn-primary" id="heroGetStarted">
+          <span>Generate My Bio</span>
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#categories" class="btn-secondary" id="heroBrowseCategories">Browse Categories</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value" id="statBios">500+</span>
+          <span class="stat-label">Bio Ideas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">20+</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">Free</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="insta-profile">
+            <div class="profile-avatar">🌟</div>
+            <div class="profile-name">hansu_ratewal82</div>
+            <div class="profile-bio-text" id="heroBioText">
+              ✨ Living life on my own terms<br />
+              📸 Capturing moments, not time<br />
+              🌿 Nature | Music | Vibes<br />
+              💌 DM for collabs<br />
+              👇 Check my latest drop
+            </div>
+            <div class="profile-link">🔗 linktr.ee/hansu</div>
+            <div class="profile-stats-mini">
+              <div><strong>482</strong><span>posts</span></div>
+              <div><strong>12.3k</strong><span>followers</span></div>
+              <div><strong>349</strong><span>following</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ───── CATEGORIES ───── -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Browse by Mood</span>
+        <h2 class="section-title">Pick Your <span class="gradient-text">Vibe</span></h2>
+        <p class="section-desc">Find the perfect bio that matches your personality and aesthetic.</p>
+      </div>
+      <div class="categories-grid" id="categoriesGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── GENERATOR ───── -->
+  <section class="section generator-section" id="generator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">AI-Powered Feel</span>
+        <h2 class="section-title">Bio <span class="gradient-text">Generator</span></h2>
+        <p class="section-desc">Select a category, hit generate and copy your perfect bio instantly!</p>
+      </div>
+
+      <div class="generator-card" id="generatorCard">
+        <!-- Category Pills -->
+        <div class="gen-filter-row">
+          <button class="pill active" data-cat="all" id="pillAll">All</button>
+          <button class="pill" data-cat="aesthetic" id="pillAesthetic">🌿 Aesthetic</button>
+          <button class="pill" data-cat="attitude" id="pillAttitude">🔥 Attitude</button>
+          <button class="pill" data-cat="funny" id="pillFunny">😂 Funny</button>
+          <button class="pill" data-cat="motivational" id="pillMotivational">💪 Motivational</button>
+          <button class="pill" data-cat="love" id="pillLove">💖 Love</button>
+          <button class="pill" data-cat="travel" id="pillTravel">✈️ Travel</button>
+          <button class="pill" data-cat="business" id="pillBusiness">💼 Business</button>
+        </div>
+
+        <!-- Bio Display -->
+        <div class="bio-display-wrapper">
+          <div class="bio-display" id="bioDisplay">
+            <div class="bio-placeholder">
+              <span class="placeholder-icon">✨</span>
+              <p>Hit <strong>Generate</strong> to get your perfect Instagram bio!</p>
+            </div>
+          </div>
+          <div class="bio-loader" id="bioLoader" aria-hidden="true">
+            <div class="loader-dots">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="bio-actions">
+          <button class="btn-generate" id="btnGenerate">
+            <span class="btn-icon">⚡</span>
+            <span>Generate Bio</span>
+          </button>
+          <button class="btn-copy" id="btnCopy" disabled>
+            <span class="btn-icon">📋</span>
+            <span>Copy</span>
+          </button>
+          <button class="btn-share" id="btnShare" disabled>
+            <span class="btn-icon">🔗</span>
+            <span>Share</span>
+          </button>
+          <button class="btn-fav" id="btnFav" disabled aria-label="Save to favourites">
+            <span>🤍</span>
+          </button>
+        </div>
+
+        <!-- Character Count -->
+        <div class="char-count-row" id="charCountRow" style="display:none;">
+          <span id="charCount">0</span> / 150 characters
+          <div class="char-bar-wrap">
+            <div class="char-bar" id="charBar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saved Bios -->
+      <div class="saved-section" id="savedSection" style="display:none;">
+        <h3 class="saved-title">❤️ Your Saved Bios</h3>
+        <div class="saved-grid" id="savedGrid"></div>
+        <button class="btn-clear-saved" id="btnClearSaved">Clear All</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── TRENDING ───── -->
+  <section class="section trending-section" id="trending">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hot Right Now</span>
+        <h2 class="section-title">Trending <span class="gradient-text">Bios</span></h2>
+        <p class="section-desc">The most loved and copied bios this week.</p>
+      </div>
+      <div class="trending-grid" id="trendingGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── TIPS ───── -->
+  <section class="section tips-section" id="tips">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pro Advice</span>
+        <h2 class="section-title">Bio Writing <span class="gradient-text">Tips</span></h2>
+        <p class="section-desc">Secrets that make your Instagram bio unforgettable.</p>
+      </div>
+      <div class="tips-grid" id="tipsGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">📸</span>
+          <span class="logo-text">InstaVibe<span class="logo-accent">Bio</span></span>
+          <p class="footer-tagline">Curated bio ideas for every vibe and personality.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Explore</h4>
+          <a href="#categories">Categories</a>
+          <a href="#generator">Generator</a>
+          <a href="#trending">Trending</a>
+          <a href="#tips">Bio Tips</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Creator</h4>
+          <a href="https://www.instagram.com/hansu_ratewal82" target="_blank" rel="noopener"
+            id="footerInstaLink">Instagram</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with 💜 by <a href="https://www.instagram.com/hansu_ratewal82" target="_blank" rel="noopener"
+            id="footerCreatorLink">@hansu_ratewal82</a></p>
+        <p class="footer-copy">© 2026 InstaVibeBio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
